@@ -6,14 +6,12 @@ def caesar_cipher(text,shift):
             if char.islower():
                 if shifted > ord('Z'):
                     shifted-=26
-                elif shifted <
-ord('a'):
+                elif shifted <ord('a'):
                     shifted+=26
             elif char.isupper():
                 if shifted > ord('Z'):
                     shifted-=26
-                elif shifted < 
-ord('A'):
+                elif shifted < ord('A'):
                     shifted+=26
             encrypted_text+=
 chr(shifted)
